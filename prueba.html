@@ -1,0 +1,98 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>EWES</title>
+<script src="js/engine/engineHtml.js"></script>
+<script src="js/engine/engineCss.js"></script>
+<script src="js/IDE/IDE.js"></script>
+<style>
+#texto
+{
+	background-color:brown;
+}
+.campo
+{
+	background-color:purple;
+}
+input
+{
+	background-color:red;
+}
+
+</style>
+
+</head>
+
+<body onLoad="startIDE();" id="body">
+<!-- L --><!-- A -->
+<!-- k -->
+<!-- R -->
+<!-- A -->
+<div id="0">este es un div</div>
+
+<div id="1">
+	<p id="p1-0">este es un p</p>
+    <p id="p1-1">este es un p</p>
+    <section id="p1-2">
+    	<article id="p1-2-0"></article>
+    </section>
+</div>
+<!-- otro comentario que no es k -->
+<input id="texto" class="campo" type="text" placeholder="este es un campo de texto">
+<textarea style="resize:none;border:none">m</textarea>
+
+<div id="2">
+	<p id="p2-0">este un p</p>
+    este es un div
+</div>
+<a id="des">descargar aqui</a>
+
+</body>
+</html>
+
+<script>
+/*
+cada comentario es un nodo distinto
+if (document.body.hasChildNodes()) 
+{
+  var children = document.body.childNodes;
+
+	for(i=0;i<children.length;i++) 
+  	{ 
+		if(children[i].nodeType==8)
+		{			
+			alert("posicion "+i+" = "+children[i].textContent);
+		}
+	}
+}*/
+/*
+con este veo el tipo del nodo y sus atributos
+if (document.body.hasChildNodes()) 
+{
+  // So, first we check if the object is not empty, if the object has child nodes
+  var children = document.body.childNodes;
+
+	for(i=0;i<children.length;i++) 
+  	{ 
+  		//alert("lenght "+children.length+" ---  i "+i+" -----  type "+children[i].nodeType);
+		1 es elemento
+		3 es texto
+		8 es comentario
+		if(children[i].nodeType==1)
+		{
+			if(children[i].hasAttributes())
+			{
+				for(a=0;a<children[i].attributes.length;a++)
+				{
+					alert(children[i].attributes[a].name+" = "+children[i].attributes[a].value);
+					if(children[i].attributes[a].name=='style'){alert(typeof children[i].attributes[a].value);}
+				}
+			}
+		}
+	}
+}*/
+
+
+
+</script>

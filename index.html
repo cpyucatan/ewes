@@ -1,0 +1,68 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>EWES</title>
+<script src="js/engine/engineHtml.js"></script>
+<script src="js/engine/engineCss.js"></script>
+<script src="js/IDE/IDE.js"></script>
+
+<link rel="stylesheet" type="text/css" href="ar1.css"> 
+
+
+<style>
+input
+{
+	background-color:pink;
+}
+
+@import url('ar2.css');
+
+</style>
+</head>
+
+<body onLoad="startIDE();" id="body">
+<!-- L --><!-- A -->
+<!-- k -->
+<!-- R -->
+<!-- A -->
+<div id="0">este es un div</div>
+
+<div id="1">
+	<p id="p1-0">este es un p</p>
+    <p id="p1-1">este es un p</p>
+    <section id="p1-2">
+    	<article id="p1-2-0"></article>
+    </section>
+</div>
+<!-- otro comentario que no es k -->
+<input id="texto" class="campo" type="text" placeholder="este es un campo de texto">
+<textarea style="resize:none;border:none">m</textarea>
+
+<div id="2">
+	<p id="p2-0">este un p</p>
+    este es un div
+</div>
+<a id="des">descargar aqui</a>
+
+</body>
+</html>
+
+<script>
+
+for(i=0;i<document.styleSheets.length;i++)
+{
+	//la s importa y la r R tambien
+	/*alert(document.styleSheets[i].cssRules[0].cssText);*/
+	/*alert(document.styleSheets[i].cssRules[0].type);*/
+	/*alert(document.styleSheets[i].cssRules[0].style.cssText);*/
+	/*alert(document.styleSheets[i].cssRules[0].selectorText);*/
+	/*alert(document.styleSheets[i].cssRules[0].style.backgroundColor);*/
+	
+	//para los @import
+	//alert(document.styleSheets[0].cssRules[0].styleSheet.cssRules[0].cssText);
+	//¿son ingnoradas todas las reglas si el selector tiene menos especifidad?
+	//solo si es @import, si no, se suman
+}
+
+</script>
